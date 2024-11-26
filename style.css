@@ -24,6 +24,7 @@
 ul li{
     list-style: disc;
     color: hsl(332, 51%, 32%);
+
 }
 
 ol li{
@@ -32,10 +33,13 @@ ol li{
 }
 
 body {
-    background-color:  hsl(30, 54%, 90%);
+    background-color:  hsl(30, 54%, 90%);;
     min-height: 100vh;
-    display: grid;
-    place-content: center;
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin: 0;
 }
 
 main{
@@ -61,11 +65,12 @@ img{
     margin-top: 2.1rem;
     margin-bottom: 1.3rem;
     font-weight: 400;
+    line-height: 35px;
 }
 
 main p{
     font-size: 15px;
-    line-height: 20px;
+    line-height: 25px;
     margin: 0;
 }
 
@@ -115,8 +120,30 @@ main .section2 ol{
     border-bottom: 1px solid  hsl(30, 18%, 87%);
 }
 
-main .section3  table tr td:last-child{
+main .section3  p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main .section3 table {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+main .section3  table tr{
+    width: 100%;
+    min-width: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+   
     
+}
+
+main .section3  table tr td{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 main .section3  table tr td:last-child{
@@ -124,9 +151,19 @@ main .section3  table tr td:last-child{
     font-weight: 700;
 }
 
+main .section .menu li {
+    line-height: 22px;
+}
 
-main ul, ol li {
+main ul li {
     margin-bottom: 0.8rem;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+main ol li {
+    margin-bottom: 0.8rem;
+    font-size: 15px;
 }
 
 .attribution { 
@@ -137,5 +174,23 @@ main ul, ol li {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
 
+@media (max-width: 425px) {
+    
+
+    main .prepare{
+        padding: 15px;
+    }
+
+    main .prepare .spanA{
+        font-size: 16px;
+    }
+
+    main .heading{
+        font-size: 21px;
+    }
+    main .h1{
+        font-size: 1.8rem;
+    }
 }
