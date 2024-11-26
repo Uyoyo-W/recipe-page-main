@@ -10,11 +10,25 @@
 
 *{
     font-family: 'Outfit', sans-serif;
+    color: hsl(216, 15%, 48%);
 }
 
 .heading{
     font-family: 'Young Serif', sans-serif;
     color: hsl(14, 45%, 36%);
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+}
+
+ul li{
+    list-style: disc;
+    color: hsl(332, 51%, 32%);
+}
+
+ol li{
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
 }
 
 body {
@@ -40,28 +54,86 @@ img{
     border-radius: 20px;
 }
 
-h1{
-    font-size: 18px;
+.h1{
+    font-size: 30px;
     line-height: 21px;
     color: hsl(218, 44%, 22%);
+    margin-top: 2.1rem;
+    margin-bottom: 1.3rem;
+    font-weight: 400;
 }
 
 main p{
     font-size: 15px;
     line-height: 20px;
-    color: hsl(216, 15%, 48%);
     margin: 0;
 }
 
-main span{
-    color: hsl(332, 51%, 32%);
+main .prepare{
+    background-color: hsl(330, 100%, 98%);
+    margin: 20px 0;
+    border-radius: 4px;
+    padding: 20px
 }
+
+main .text{
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.step{
+    font-weight: 700;
+    color: hsl(24, 5%, 18%);
+}
+
+main .prepare .spanA{
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+main .section{
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+main .section1 .ingredients-list li:last-child{
+    padding-bottom: 15px;
+}
+
+main .section1 .ingredients-list{
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+}
+
+
+main .section2 ol li:last-child{
+    padding-bottom: 15px;
+}
+
+main .section2 ol{
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+}
+
+main .section3  table tr td:last-child{
+    
+}
+
+main .section3  table tr td:last-child{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+
+main ul, ol li {
+    margin-bottom: 0.8rem;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
     display: flex;
-    /* position: fixed; */
-    /* bottom: 7px; */
+    align-items: center;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
